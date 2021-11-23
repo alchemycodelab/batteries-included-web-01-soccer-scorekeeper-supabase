@@ -1,4 +1,4 @@
-# Deliverable 06 - Supabase Soccer Scorekeeper
+# Supabase Soccer Scorekeeper
 
 [Buggy Supabase Soccer Scorekeeper](https://github.com/alchemycodelab/buggy-js-soccer-scorekeeper-supabase)
 
