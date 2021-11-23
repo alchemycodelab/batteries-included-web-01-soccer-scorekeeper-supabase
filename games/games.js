@@ -5,7 +5,7 @@ import {
     createGame,
 } from '../fetch-utils.js';
 import { renderGame } from '../render-utils.js';
-// import functions and grab DOM elements
+
 const currentGameEl = document.getElementById('current-game-container');
 const pastGamesEl = document.getElementById('past-games-container');
 const logoutButton = document.getElementById('logout');
@@ -29,11 +29,6 @@ let currentGame = {
     score1: 0,
     score2: 0,
 };
-
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
 
 nameForm.addEventListener('submit', (e) => {
     // don't forget to prevent the default form behavior!
