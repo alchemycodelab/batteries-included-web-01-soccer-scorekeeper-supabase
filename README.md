@@ -1,25 +1,31 @@
-## The Golden Rule: 
+# Deliverable 06 - Supabase Soccer Scorekeeper
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+[Buggy Supabase Soccer Scorekeeper](https://github.com/alchemycodelab/buggy-js-soccer-scorekeeper-supabase)
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
 
-## Making a plan
+### Live Example:
+https://alchemycodelab.github.io/js-soccer-scorekeeper/
 
-1) **Make a drawing of your app. Simple "wireframes"**
-1) **Once you have a drawing, name the HTML elements you'll need to realize your vision**
-1) **For each HTML element ask: Why do I need this?** 
-1) **Once we know _why_ we need each element, think about how to implement the "Why" as a "How"**
-1) **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change?**
-1) **Think about how to validate each of your features according to a Definition of Done**
-1) **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+![](./assets/soccer-scorekeeper.png)
 
-Additional considerations:
-- Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
-- Consider your data model. 
-  - What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need? 
-  - What are the key/value pairs? 
-  - What arrays might you need? 
-  - What needs to live in a persistence layer?
-- Is there some state we need to initialize?
-- Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+| User should be able to . . .                                                         |             |
+| :----------------------------------------------------------------------------------- | ----------: |
+| Visit the deployed pages on GitHub pages, with link in the About section of the Github repo|        1 |
+| On the home page (`'/'`), Login and Signup using the login and signup form. On success, redirect to the `/games` page   |        1 |
+| Logout by clicking the logout button                                                       |        1 |
+| If a non-logged-in user tries to visit the games page, redirect them to the login page | 1 |
+| On the games page load, see a form and empty current game div                              |        1 |
+| On the games page load, fetch all past games and render them to the past games div         |        1 |
+| On submit, add the team names to the current game div                                      |        1 |
+| On clicking add or subtract, increment and decrement the correct score in the current game div|     1 |
+| On clicking finish, empty the current game div, and use supabase to add the current game to the database. |1|
+| On clicking finish, clear the past games div, then fetch all past games from supabase and render them in the past games div. |1|
+
+| Functions                                                              |             |
+| :----------------------------------------------------------------------------------- | ----------: |
+| IMPURE: `updateCurrentGameEl()` | 1|
+| IMPURE: `displayAllGames()` : clears out and appends to games div | 1|
+| PURE: `renderGame(game)` : returns DOM node | 1|
+| PURE: `renderTeam(name, score)` :  return DOM node | 1|
+| ASYNC: `createGame(game)` : creates a game for currently logged in user in supabase |1|
+| ASYNC: `getGames()` : returns games for currently logged in user from supabase |1|
