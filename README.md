@@ -10,8 +10,6 @@
 ### Live Example:
 https://alchemycodelab.github.io/js-soccer-scorekeeper/
 
-<img src="https://raw.githubusercontent.com/alchemycodelab/half-baked-js-soccer-scorekeeper-supabase/main/assets/soccer-scorekeeper.png" width="1000" height="560" />
-
 | User should be able to . . .                                                         |             |
 | :----------------------------------------------------------------------------------- | ----------: |
 | Visit the deployed pages on GitHub pages, with link in the About section of the Github repo|        1 |
