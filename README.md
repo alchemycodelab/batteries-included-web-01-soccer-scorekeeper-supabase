@@ -8,7 +8,7 @@
 [Buggy Supabase Soccer Scorekeeper](https://github.com/alchemycodelab/buggy-js-soccer-scorekeeper-supabase)
 
 ### Live Example:
-https://alchemycodelab.github.io/js-soccer-scorekeeper-supabase/
+https://alchemycodelab.github.io/web-01-soccer-scorekeeper-supabase/
 
 | User should be able to . . .                                                         |             |
 | :----------------------------------------------------------------------------------- | ----------: |
