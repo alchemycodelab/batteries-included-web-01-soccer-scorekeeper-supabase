@@ -4,10 +4,7 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsI
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function createGame(game){
-    const newGame = { 
-        ...game, 
-        user_id: client.auth.user().id, 
-    };
+    const newGame = { ...game };
 
     // create a single new game in the games table using the above object
     
