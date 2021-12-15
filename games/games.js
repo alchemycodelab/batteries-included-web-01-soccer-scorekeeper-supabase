@@ -21,8 +21,6 @@ const teamTwoLabel = document.getElementById('team-two-name');
 
 checkAuth();
 
-let pastGames = [];
-
 let name1 = '';
 let name2 = '';
 let score1 = 0;
@@ -111,7 +109,7 @@ function displayCurrentGameEl() {
 function displayAllGames() {
     // clear out the past games list in the DOM
 
-    // loop through the past games in state
+    // fetch and loop through the past games 
     // render and append a past game for each past game in state
 }
 
