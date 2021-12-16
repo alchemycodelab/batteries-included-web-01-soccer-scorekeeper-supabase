@@ -42,37 +42,32 @@ nameForm.addEventListener('submit', (e) => {
 teamOneAddButton.addEventListener('click', () => {
     // increment the current state for team one's score
     
-    // display updated data in the current game div
+    displayCurrentGameEl()
 });
 
 teamTwoAddButton.addEventListener('click', () => {
     // increment the current state for team two's score
 
-    // display updated data in the current game div
+    displayCurrentGameEl()
 });
 
 teamOneSubtractButton.addEventListener('click', () => {
     // decrement the current state for team one's score
 
-    // display updated data in the current game div
+    displayCurrentGameEl()
 });
 
 teamTwoSubtractButton.addEventListener('click', () => {
     // decrement the current state for team two's score
 
-    // display updated data in the current game div
+    displayCurrentGameEl()
 });
 
 finishGameButton.addEventListener('click', async() => {
-    
     // create a new game using the current game state
     
-    // re-fetch the games to get the updated state
-    
-    // reassign the past games state to the re-fetched, updated games
-    
-    displayAllGames();
-    
+    // after creating this new game, re-fetch the games to get the updated state and display them (hint: call displayAllGames())
+            
     name1 = '';
     name2 = '';
     score1 = 0;
@@ -87,10 +82,7 @@ logoutButton.addEventListener('click', () => {
 
  // on load . . .
 window.addEventListener('', async() => {
-    // fetch all games
-    // check if there are any
-    // if there are, set those as the initial state of pastGames
-    // then display all the games (hint: call displayAllGames())
+    // display all past games (hint: call displayAllGames())
 });
 
 
@@ -108,8 +100,10 @@ function displayCurrentGameEl() {
 
 function displayAllGames() {
     // clear out the past games list in the DOM
+    
+    // FETCH ALL GAMES from supabase
 
-    // fetch and loop through the past games 
+    // loop through the past games 
     // render and append a past game for each past game in state
 }
 
