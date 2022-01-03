@@ -7,6 +7,10 @@
 
 [Buggy Supabase Soccer Scorekeeper](https://github.com/alchemycodelab/buggy-js-soccer-scorekeeper-supabase)
 
+Here is the model for the `games` table
+
+![](./games-model.png)
+
 ### Live Example:
 https://alchemycodelab.github.io/web-01-soccer-scorekeeper-supabase/
 
