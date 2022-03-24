@@ -34,7 +34,7 @@ https://alchemycodelab.github.io/web-01-soccer-scorekeeper-supabase/
 | :----------------------------------------------------------------------------------- | ----------: |
 | IMPURE: `displayCurrentGameEl()` : displays the form state to the current game DOM element | .5|
 | IMPURE: `displayAllGames()` : clears out and appends to games div | .5|
-| PURE with TDD: `renderGame(game)` : returns DOM node | .5|
-| PURE with TDD: `renderTeam(name, score)` :  return DOM node | .5|
+| PURE (stretch: with TDD): `renderGame(game)` : returns DOM node | .5|
+| PURE (stretch: with TDD): `renderTeam(name, score)` :  return DOM node | .5|
 | ASYNC: `createGame(game)` : creates a game for currently logged in user in supabase |.5|
 | ASYNC: `getGames()` : returns games for currently logged in user from supabase |.5|
